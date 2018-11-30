@@ -9,7 +9,7 @@ package Ders08Lab;
  *
  * @author anizam
  */
-public class Soru4 {
+public class Ornek3 {
 
     public static void main(String[] args) {
         Personel[] calisanlar = new Personel[3];

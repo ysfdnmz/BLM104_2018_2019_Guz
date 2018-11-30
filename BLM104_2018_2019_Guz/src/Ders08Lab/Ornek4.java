@@ -9,7 +9,7 @@ package Ders08Lab;
  *
  * @author anizam
  */
-public class Soru5 {
+public class Ornek4 {
 
     public static void main(String[] args) {
         int dizi[][] = {{1, 3, 5}, {1, 0, 0}, {2, 0, 7}};
