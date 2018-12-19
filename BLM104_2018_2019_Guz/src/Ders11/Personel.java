@@ -31,6 +31,9 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Personel.findByUnvanno", query = "SELECT p FROM Personel p WHERE p.unvanno = :unvanno"),
     @NamedQuery(name = "Personel.findByBirimAdi", query = "SELECT p FROM Personel p WHERE p.birimAdi = :birimAdi")})
 public class Personel implements Serializable {
+
+    @Column(name = "UNVAN_ID")
+    private Integer unvanId;
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
@@ -125,6 +128,14 @@ public class Personel implements Serializable {
     @Override
     public String toString() {
         return "Ders11.Personel[ personelId=" + personelId + " ]";
+    }
+
+    public Integer getUnvanId() {
+        return unvanId;
+    }
+
+    public void setUnvanId(Integer unvanId) {
+        this.unvanId = unvanId;
     }
     
 }
