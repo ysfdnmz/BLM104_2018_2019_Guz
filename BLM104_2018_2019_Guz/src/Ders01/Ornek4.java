@@ -11,19 +11,19 @@ import javax.swing.JTextField;
 
 
 /*
-equals metodu ise ilgili stringin parantez içine yazılan string ile aynı olup olmadığı kontrolünü yapar aynı ise true döndürür yani if bloğu içine girmiş oluruz.
-stringlerin if içinde == operatörü ile karşılaştırılması tavsiye edilmez
+equals metodu ise ilgili stringin parantez içine yazılan string'in değerinin aynı olup olmadığı kontrolünü yapar aynı ise true döndürür yani if bloğu içine girmiş oluruz.
+stringlerin değerlerinin if içinde == operatörü ile karşılaştırılması tavsiye edilmez
 
 String a = "Sample"
 String b = "Sample"
 
 if(a==b)
 
-Yukarıdaki kod javada kötü bir kullanımdır. 20. satırdaki kod yerine:
+Yukarıdaki kodda == operatörü referans kontrolü yapar yani a ve b nin referanslarını kontrol eder. Eğer iki Stringin değerlerini karşılaştırmak istiyorsanız 20. satır yerine:
 
 if(a.equals(b))
 
-Kullanılmalıdır
+Kullanılmalıdır.
 
 )
 */
