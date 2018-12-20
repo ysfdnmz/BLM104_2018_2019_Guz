@@ -8,6 +8,10 @@ package Ders01;
 import java.awt.FlowLayout;
 import javax.swing.JButton;
 
+/*
+Bu örnekte rastgele 10 tane buton üretiliyor üretilen butonlar bir dizide saklanıyor. bu sayede değiştir butonuna basınca ilgili buton değişiyior.
+*/
+
 /**
  *
  * @author anizam
@@ -20,7 +24,7 @@ public class Ornek5 extends javax.swing.JFrame {
     public Ornek5() {
         initComponents();
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -74,15 +78,15 @@ public class Ornek5 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     JButton[] butonlar=new JButton[10];
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:     
+        // TODO add your handling code here:
         for (int i = 0; i < 10; i++) {
-            JButton buton=new JButton(i+"");
-            butonlar[i]=buton;
-            this.add(buton);                                    
+            JButton buton=new JButton(i+""); //new JButton() da parantezler içine yazılan string buton oluştururken onun üstünde yazacak texti oluşturuyor. i bir int değer olduğundan yanına +"" yazarak stringe dönüşmesi sağlanmış.
+            butonlar[i]=buton; // oluşturulan buton objesi butonlar sonradan kullanılmak üzere butonlarda saklanıyor.
+            this.add(buton); //this.add ise butonu frame e ekliyor.
         }
         this.setLayout(new FlowLayout());
         pack();
-        
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void DegistirButonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DegistirButonActionPerformed
@@ -97,7 +101,7 @@ public class Ornek5 extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -124,7 +128,7 @@ public class Ornek5 extends javax.swing.JFrame {
             }
         });
     }
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton DegistirButon;
     private javax.swing.JButton jButton1;

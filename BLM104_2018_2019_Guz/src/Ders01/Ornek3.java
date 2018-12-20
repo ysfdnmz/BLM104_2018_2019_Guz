@@ -9,6 +9,15 @@ import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
+/*
+FlowLayout ilgili objenin yerleşeceği yeri ayarlamamıza yarayan bir obje
+Ancak unutulmamalıdır ki FlowLayout dan sonra this.pack ile ilgili obje framede görünür hale gelmektedir.
+(this keywordu ilgili sınıfa veya metoda ait olduğunu belirtmek yazılır. }
+
+this.thing
+)
+*/
+
 /**
  *
  * @author anizam
@@ -78,7 +87,7 @@ public class Ornek3 extends javax.swing.JFrame {
         // TODO add your handling code here:
         buton=new JButton("Yeni buton");
         this.add(buton);
-        
+
         this.setLayout(new FlowLayout());
         this.pack();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -86,7 +95,7 @@ public class Ornek3 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         buton.setText("Merhaba");
-        
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -96,7 +105,7 @@ public class Ornek3 extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

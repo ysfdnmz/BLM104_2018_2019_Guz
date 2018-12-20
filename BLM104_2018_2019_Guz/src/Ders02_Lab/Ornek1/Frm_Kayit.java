@@ -137,13 +137,13 @@ public class Frm_Kayit extends javax.swing.JFrame {
 
     private void btn_kayitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_kayitActionPerformed
         // TODO add your handling code here:
-        Personel ypersonel= new Personel();
+        Personel ypersonel= new Personel();  // Personel oluşturulup adı soyadı ve birimi set ediliyor.
         ypersonel.Adi= txt_adi.getText();
         ypersonel.Soyadi= txt_soyadi.getText();
         ypersonel.Birim= txt_birim.getText();
-        
-        Personeller.add(ypersonel);
-        
+
+        Personeller.add(ypersonel); // ArrayList e oluşturulan personel ekleniyor. ArrayList kullanılmasının sebebi bu metot'a tıklandığında ve metot bittiğinde veriler kaybolacağı için bu veri ArrayList te saklanıyor.
+
         txt_adi.setText("");
         txt_soyadi.setText("");
         txt_birim.setText("");
@@ -152,17 +152,18 @@ public class Frm_Kayit extends javax.swing.JFrame {
     private void btn_gosterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_gosterActionPerformed
         // TODO add your handling code here:
         String bilgi="";
-        for (Personel personel : Personeller) {
+        for (Personel personel : Personeller) {  //Enhanced for
+          // Enhanced for ile  ilgili Personeller ArrayList'inden personeller bilgi diye bir stringe set ediliyor.
             bilgi+= personel.Adi+" "+personel.Soyadi+" "+ personel.Birim+"\n";
         }
-        txta_bilgi.setText(bilgi);
+        txta_bilgi.setText(bilgi); // oluşturduğumuz bilgi set ediliyor.
     }//GEN-LAST:event_btn_gosterActionPerformed
 
     private void btn_araActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_araActionPerformed
         // TODO add your handling code here:
         String bilgi="";
         for (Personel personel : Personeller) {
-            if(personel.Adi.compareTo(txt_adi.getText())==0)
+            if(personel.Adi.compareTo(txt_adi.getText())==0) // Compare karşılaştırmak demektir.
             {
             bilgi+= personel.Adi+" "+personel.Soyadi+" "+ personel.Birim+"\n";
             }
@@ -177,7 +178,7 @@ public class Frm_Kayit extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

@@ -32,7 +32,7 @@ public class Frm_Diller extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        cmb_diller.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "TÜRKÇE", "?NGL?ZCE", "FRANSIZCA" }));
+        cmb_diller.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tï¿½RKï¿½E", "?NGL?ZCE", "FRANSIZCA" }));
         cmb_diller.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 cmb_dillerItemStateChanged(evt);
@@ -75,11 +75,11 @@ public class Frm_Diller extends javax.swing.JFrame {
     String [] selamlar = new String[]{"MERHABA","HELLO","BONJOUR"};
     private void cmb_dillerItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cmb_dillerItemStateChanged
         // TODO add your handling code here:
-        
+
       lbl_mesaj.setText(selamlar[cmb_diller.getSelectedIndex()]);
 //        String value= (String)cmb_diller.getSelectedItem();
-//  
-//        if (value.compareTo("TÜRKÇE")==0)
+//
+//        if (value.compareTo("Tï¿½RKï¿½E")==0)
 //        {
 //           lbl_mesaj.setText("MERHABA");
 //        }else if (value.compareTo("?NGL?ZCE")==0)
@@ -94,7 +94,7 @@ public class Frm_Diller extends javax.swing.JFrame {
 
     private void cmb_dillerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmb_dillerActionPerformed
         // TODO add your handling code here:
-                lbl_mesaj.setText(selamlar[cmb_diller.getSelectedIndex()]);
+                lbl_mesaj.setText(selamlar[cmb_diller.getSelectedIndex()]); // getSelectedIndex seÃ§ili satÄ±rÄ±n indexini almamÄ±zÄ± saÄŸlar.
     }//GEN-LAST:event_cmb_dillerActionPerformed
 
     /**
@@ -104,7 +104,7 @@ public class Frm_Diller extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

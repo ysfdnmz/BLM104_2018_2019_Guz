@@ -5,6 +5,11 @@
  */
 package Ders02;
 
+/*
+DefaultListModel default modellerden list için oluşturulmuş bir taslak model.
+
+*/
+
 import javax.swing.DefaultListModel;
 
 /**
@@ -104,12 +109,12 @@ public class Ornek7 extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         DefaultListModel dlm=new DefaultListModel();
-        dlm.addElement("Ahmet Ak");
+        dlm.addElement("Ahmet Ak"); // oluşturulan DefaultListModel e eklemeler yapılıyor
         dlm.addElement("A V");
         dlm.addElement("S S");
-        jList1.setModel(dlm);
+        jList1.setModel(dlm); // burada ise istediğimiz jList e modelleri set ediyoruz.
         jList2.setModel(dlm);
-        
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -119,7 +124,7 @@ public class Ornek7 extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

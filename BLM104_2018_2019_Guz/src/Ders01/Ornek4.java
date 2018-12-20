@@ -9,6 +9,25 @@ import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JTextField;
 
+
+/*
+equals metodu ise ilgili stringin parantez içine yazılan string ile aynı olup olmadığı kontrolünü yapar aynı ise true döndürür yani if bloğu içine girmiş oluruz.
+stringlerin if içinde == operatörü ile karşılaştırılması tavsiye edilmez
+
+String a = "Sample"
+String b = "Sample"
+
+if(a==b)
+
+Yukarıdaki kod javada kötü bir kullanımdır. 20. satırdaki kod yerine:
+
+if(a.equals(b))
+
+Kullanılmalıdır
+
+)
+*/
+
 /**
  *
  * @author anizam
@@ -78,10 +97,10 @@ public class Ornek4 extends javax.swing.JFrame {
             JButton buton =new JButton("Buton");
             this.add(buton);
         }
-        
+
         this.setLayout(new FlowLayout());
         pack();
-        
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -91,7 +110,7 @@ public class Ornek4 extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
