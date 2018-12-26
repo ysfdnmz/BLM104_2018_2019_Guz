@@ -5,6 +5,10 @@
  */
 package Ders03;
 
+/*
+
+*/
+
 /**
  *
  * @author anizam
@@ -33,12 +37,15 @@ public class Ornek4 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        // jTable'ın içindeki verileri bir Object[][] dizisi ile set ediyoruz.
             new Object [][] {
+              //buradaki değerler satır bilgisi (row)
                 {"1", "Ahmet", "Ak", "1000000"},
                 {"2", "Mehmet", "Ye?il", "500000"},
                 {"3", "Ay?e", "Sar?", "600000"}
             },
             new String [] {
+              // buradaki değerler ise sütun bilgileri 
                 "Personel Id", "Ad?", "Soyad?", "Title 4"
             }
         ));
@@ -70,7 +77,7 @@ public class Ornek4 extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

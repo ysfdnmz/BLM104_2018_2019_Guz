@@ -12,10 +12,7 @@ import javax.swing.JLabel;
 /*
 FlowLayout ilgili objenin yerleşeceği yeri ayarlamamıza yarayan bir obje
 Ancak unutulmamalıdır ki FlowLayout dan sonra this.pack ile ilgili obje framede görünür hale gelmektedir.
-(this keywordu ilgili sınıfa veya metoda ait olduğunu belirtmek yazılır. }
-
-this.thing
-)
+(this keywordu ilgili sınıfa veya metoda ait olduğunu belirtmek yazılır.)
 */
 
 /**

@@ -139,8 +139,8 @@ DefaultListModel<Personel> dlm;
         int toplamMaas=0;
         String maaslar="";
         for (int i:jList1.getSelectedIndices()){
-            maaslar+=dlm.get(i).maas+"+";// dlm.get ilgili listede verilen indexteki veriyi bize döndürür. Bir for döngüsü ile 
-            toplamMaas+=dlm.get(i).maas;
+            maaslar+=dlm.get(i).maas+"+"; // dlm.get ilgili listede verilen indexteki veriyi bize döndürür. Bir for döngüsü ile dlm deki bütün verileri maaslar stringi içinde biriktiriyoruz.
+            toplamMaas+=dlm.get(i).maas; // bir üst satır string bulurken, bu satır int toplamı buluyor.
         }
         lbMaasToplam.setText(maaslar+"="+toplamMaas);
 

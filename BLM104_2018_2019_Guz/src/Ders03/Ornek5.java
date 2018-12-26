@@ -19,7 +19,7 @@ public class Ornek5 extends javax.swing.JFrame {
      */
     public Ornek5() {
         initComponents();
-        
+
     }
 
     /**
@@ -52,21 +52,21 @@ public class Ornek5 extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jButton1.setText("Bütünle?ik Olu?turma");
+        jButton1.setText("Bï¿½tï¿½nle?ik Olu?turma");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        btnVektor.setText("VektörleVEriEkleme");
+        btnVektor.setText("Vektï¿½rleVEriEkleme");
         btnVektor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVektorActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Bütünle?ik  NEw ile Olu?turma");
+        jButton2.setText("Bï¿½tï¿½nle?ik  NEw ile Olu?turma");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -106,6 +106,7 @@ public class Ornek5 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        //DefaultTableModel'e sÃ¼tun ve satÄ±r bilgileri ekliyoruz.
         DefaultTableModel dtm=new DefaultTableModel();
         String baslik[]={"Id","Adi","Soyadi"};
         dtm.setColumnIdentifiers(baslik);
@@ -116,7 +117,7 @@ public class Ornek5 extends javax.swing.JFrame {
         String satir2[]={"20","Ay?e","Ye?il"};
         dtm.addRow(satir2);
         jTable1.setModel(dtm);
-                
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnVektorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVektorActionPerformed
@@ -130,8 +131,8 @@ public class Ornek5 extends javax.swing.JFrame {
         satir0.add("Ak");
         satir0.add("ddd");
         dtm.addRow(satir0);
-        jTable1.setModel(dtm);
-                
+        jTable1.setModel(dtm); // en sonunda oluÅŸturduÄŸumuz DefaultTableModel'i setModel metodu ile jTable'Ä±mÄ±za set ediyoruz.
+
     }//GEN-LAST:event_btnVektorActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -143,7 +144,7 @@ public class Ornek5 extends javax.swing.JFrame {
         dtm.addRow(new String[]{"10","Ahmet","Ak"});
         dtm.addRow(new String[]{"15","Ay?e","Ye?il"});
         dtm.addRow(new String[]{"20","Ay?e","Ye?il"});
-        
+
         jTable1.setModel(dtm);
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -154,7 +155,7 @@ public class Ornek5 extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

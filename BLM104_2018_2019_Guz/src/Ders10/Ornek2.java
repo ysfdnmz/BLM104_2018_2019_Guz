@@ -11,17 +11,22 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+/*
+
+*/
+
+
 /**
  *
  * @author anizam
  */
 public class Ornek2 {
     public static void main(String[] args) {
-          
+
         String adres="jdbc:derby://localhost:1527/sample";
         try(Connection con=DriverManager.getConnection(adres, "app","app")){
             String sqlSorgu="SELECT * FROM personel WHERE adi=? AND soyadi=?";
-            PreparedStatement s=con.prepareStatement(sqlSorgu);
+            PreparedStatement s=con.prepareStatement(sqlSorgu); // burada createStatement yerine PreparedStatement kullanılmış. ikisi arasındaki farkı araştırabilirsiniz.
             String adi="AHMET";
             String soyadi="AK";
             s.setString(1, adi);

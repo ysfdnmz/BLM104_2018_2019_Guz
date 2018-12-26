@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
  */
 public class Ornek6 extends javax.swing.JFrame {
      DefaultTableModel dtm=new DefaultTableModel();
-        
+
     /**
      * Creates new form Ornek6
      */
@@ -84,7 +84,7 @@ public class Ornek6 extends javax.swing.JFrame {
 
         jLabel3.setText("Soyad?");
 
-        jButton3.setText("Tüm Veriyi Oku");
+        jButton3.setText("Tï¿½m Veriyi Oku");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -95,14 +95,14 @@ public class Ornek6 extends javax.swing.JFrame {
         txtTumVeri.setRows(5);
         jScrollPane2.setViewportView(txtTumVeri);
 
-        jButton4.setText("Tüm Veriyi Oku Parametrik");
+        jButton4.setText("Tï¿½m Veriyi Oku Parametrik");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
 
-        jButton5.setText("Seçilen Sat?r? Oku");
+        jButton5.setText("Seï¿½ilen Sat?r? Oku");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -111,7 +111,7 @@ public class Ornek6 extends javax.swing.JFrame {
 
         lbSatir.setText("Label Sat?r");
 
-        jButton6.setText("Seçilen Sat?r? Sil");
+        jButton6.setText("Seï¿½ilen Sat?r? Sil");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -213,6 +213,7 @@ public class Ornek6 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        //iki boyutlu Object dizisi ile satÄ±r bilgisi ekleyebildiÄŸimiz gibi bunu bir Vector ile de yapabiliriz.
         Vector satir=new Vector();
         satir.add(txtId.getText());
         satir.add(txtAdi.getText());
@@ -222,15 +223,16 @@ public class Ornek6 extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        //getValueAt metodu verdiÄŸimiz indexler doÄŸrultusunda bize istediÄŸimiz veriyi verir.
         String s="";
         for (int i = 0; i < dtm.getRowCount(); i++) {
             s+=dtm.getValueAt(i, 0).toString()+"   "+
-            dtm.getValueAt(i, 1).toString()+"   "+ 
+            dtm.getValueAt(i, 1).toString()+"   "+
             dtm.getValueAt(i, 2).toString()+"\n";
-       
+
         }
         txtTumVeri.setText(s);
- 
+
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -271,7 +273,7 @@ public class Ornek6 extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

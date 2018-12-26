@@ -22,8 +22,8 @@ public class Ornek1 extends javax.swing.JFrame {
 
     public Ornek1() {
         initComponents();
-        
-        mdl.setColumnIdentifiers(new Object[]{"Personel", "Maas"});
+
+        mdl.setColumnIdentifiers(new Object[]{"Personel", "Maas"}); 
         mdl.addRow(new Object[]{"Ahmet AK", 2000});
         mdl.addRow(new Object[]{"Mehmet KARA", 3000});
         mdl.addRow(new Object[]{"Ay?e YE??L", 5000});
@@ -70,7 +70,7 @@ public class Ornek1 extends javax.swing.JFrame {
             }
         });
 
-        btn_buyuk.setText("En Büyük");
+        btn_buyuk.setText("En Bï¿½yï¿½k");
         btn_buyuk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_buyukActionPerformed(evt);
@@ -154,9 +154,9 @@ public class Ornek1 extends javax.swing.JFrame {
         for (int i = 0; i < mdl.getRowCount(); i++) {
             toplam+= Integer.parseInt(mdl.getValueAt(i, 1).toString());
         }
-        
+
         txt_sonuc.setText(toplam+"");
-        
+
     }//GEN-LAST:event_btn_toplamActionPerformed
 
     private void btn_buyukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_buyukActionPerformed
@@ -174,9 +174,9 @@ public class Ornek1 extends javax.swing.JFrame {
             {
                 isim+=" "+ mdl.getValueAt(i, 0).toString();
             }
-           
+
         }
-        
+
         txt_sonuc.setText(isim+" "+ enbuyuk);
     }//GEN-LAST:event_btn_buyukActionPerformed
 
@@ -189,7 +189,7 @@ public class Ornek1 extends javax.swing.JFrame {
                 mdl.setValueAt(maas+1000, i, 1);
             }
         }
-        
+
     }//GEN-LAST:event_btn_zamyapActionPerformed
 
     private void btn_duzelt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_duzelt1ActionPerformed
@@ -206,7 +206,7 @@ public class Ornek1 extends javax.swing.JFrame {
              }
              mdl.setValueAt(ymaas, i, 1);
         }
-        
+
     }//GEN-LAST:event_btn_duzelt1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -214,7 +214,7 @@ public class Ornek1 extends javax.swing.JFrame {
         String desen="[\\d]";
         Pattern p= Pattern.compile(desen);
         Matcher m;
-                
+
          for (int i = 0; i < mdl.getRowCount(); i++) {
             String maas=mdl.getValueAt(i, 1).toString();
             String ymaas="";
@@ -225,7 +225,7 @@ public class Ornek1 extends javax.swing.JFrame {
             }
             mdl.setValueAt(ymaas, i, 1);
         }
-        
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -235,7 +235,7 @@ public class Ornek1 extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

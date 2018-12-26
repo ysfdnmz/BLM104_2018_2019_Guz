@@ -27,10 +27,11 @@ public class Ornek7 {
             s.setString(2, soyadi);
             System.out.println(sqlSorgu);
             ResultSet rs=s.executeQuery();
-            ResultSetMetaData rsMetaData=rs.getMetaData();
-            System.out.println(rsMetaData.getColumnCount());
+            ResultSetMetaData rsMetaData=rs.getMetaData(); //ResultMetaData sayesinde ilgil ResultSet hakkında bilgiler elde edinebiliriz.
+            System.out.println(rsMetaData.getColumnCount()); // Burada o ResultSet'in kolon sayısı alınmış.
             for (int i = 1; i <= rsMetaData.getColumnCount(); i++) {
-                System.out.println(rsMetaData.getColumnName(i));
+                System.out.println(rsMetaData.getColumnName(i)); // Burada ise kolon sayısı kadar dönecek bir for döngüsünde kolonların isimleri yazdırılmış.
+                                                                 // Bu bilgi önemli bir bilgi, zira Veritaban'ından bir Tablo'yu kendi jTable'ımıza aktardığımızda kolon bilgilerini bu şekilde alabiliriz.
             }
         }catch(Exception e){
             System.out.println("Hata "+e.getMessage());

@@ -81,7 +81,7 @@ public class Ornek1 extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         JCheckBox jb = new JCheckBox("Kutu");
-        kutular.add(jb);
+        kutular.add(jb); // her butona tıklamada bir JCheckBox oluşturuluyor ve oluşturulan JCheckBox ArrayList'te saklanıyor.
         this.getContentPane().add(jb);
         this.setLayout(new FlowLayout());
         pack();
@@ -89,8 +89,8 @@ public class Ornek1 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        for (JCheckBox kutu : kutular) {
-            if (kutu.isSelected())
+        for (JCheckBox kutu : kutular) { //Kutuyu görünür/görünmez yapan metot.
+            if (kutu.isSelected()) //eğer kutu seçilmişse
                 kutu.setVisible(!kutu.isVisible());
         }
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -102,7 +102,7 @@ public class Ornek1 extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
